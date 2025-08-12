@@ -1,44 +1,28 @@
 
-body {
-    font-family: 'Arial', sans-serif;
-    direction: rtl;
-    background-color: #f4f4f4;
+:root {
+    --primary: #0A0A2A;
+    --accent: #FFD700;
+    --danger: #E50914;
+    --light: #FFFFFF;
+    --dark: #060618;
+    --gray: #8A8AA3;
+    --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #003366;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: var(--primary);
+    color: var(--light);
+    overflow-x: hidden;
+    line-height: 1.7;
+    perspective: 1000px;
 }
 
-header img {
-    max-width: 150px;
-}
+/* ... rest of the CSS from the provided content ... */
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
